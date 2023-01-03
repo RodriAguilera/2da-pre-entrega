@@ -84,7 +84,6 @@ h3{
 
 .justify-content{
     justify-content: space-between;
-    margin: 30px 30px 30px 30px;
    }
 
 .aligne-items{
@@ -183,7 +182,7 @@ nav a:hover{
 }
 
 .main__texto--m{
-    font-size: 1.8em;
+    font-size: 1em;
     margin-bottom: 10px;
     color: rgb(199, 188, 183);
 }
