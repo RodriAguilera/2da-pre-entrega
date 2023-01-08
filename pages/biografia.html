@@ -15,7 +15,8 @@
   <body>
 
     <!-- comienza botonera -->
-    <nav class="navbar navbar-expand-lg bg-blue" id="botonera">
+    <div class="sticky-top">
+      <nav class="navbar navbar-expand-lg botonera__bg" id="botonera">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html">
             <img src="../img/iconos/logo-svg.svg" alt="Logo Spider en negro" class="nav-img">
@@ -58,11 +59,12 @@
           </div>
         </div>
       </nav>
+      </div>
 
   
  <!-- termina botonera -->
 <!-- comienza header -->
-<header class="encabezado">
+<header class="header__biografia">
 
 </header>
 <!-- termina header -->
@@ -75,13 +77,14 @@
   <!-- comienza sistema de grid BS -->
 
   <div class="container text-center">
-    <section class="row d-flex justify-content-center">
-    <div class="row row-cols-2">
-      <div class="col col-sm-12 col-lg-6">
+    <section class="d-flex justify-content-center">
+    
+      <div class="col mx-5">
         <video src="../img/fotos/Video 2 (1).MP4" controls autoplay muted width="100%" >
 
-        </video>   </div>
-      <div class="col col-sm-12 col-lg-6">
+        </video>  
+       </div>
+      <div class="col mx-5">
         <video src="../img/fotos/Video 1 (1).mov" controls width="100%"></video>
       </div>
       
@@ -95,33 +98,31 @@
 
 <!-- comienza footer -->
 <footer>
-  <div class="container">
-    <nav class="navbar navbar-expand-lg flex justify-content botonera__lista aligne-items">
-      <div class="container-fluid">
-    <a href="../index.html">
-        <img src="../img/iconos/logo-svg.svg" alt="logo de spider tazzioli" class="nav-img">
+
+  <nav class="mx-3 flex justify-content botonera__lista aligne-items">
+
+    
+<a href="../index.html">
+    <img src="../img/iconos/logo-svg.svg" alt="logo de spider tazzioli" class="nav-img">
+</a>
+
+<li>
+    Córdoba, Argentina
+</li>
+<li>
+    Código Postal 5000
+</li>   
+<a href="../pages/contacto.html" class="boton">    
+        Contacto
+    </a> 
+
+    <a href="https://instagram.com/spider.tazzioli?igshid=MTg0ZDhmNDA=" target="_blank"> 
+<img src="../img/iconos/insta.png" alt="seguinos en Instagram">
+
     </a>
-    
-    <li>
-        Córdoba, Argentina
-    </li>
-    <li>
-        Código Postal 5000
-    </li>   
-    <a href="./contacto.html" class="boton">    
-            Contacto
-        </a> 
-    
-        <a href="https://instagram.com/spider.tazzioli?igshid=MTg0ZDhmNDA=" target="_blank"> 
-    <img src="../img/iconos/insta.png" alt="seguinos en Instagram">
-    
-        </a>
-  
-  </div>
 </nav>
-</div>
-    </footer>
-    <!-- termina footer -->
+</footer>
+<!-- termina footer -->
 
 
 </body>

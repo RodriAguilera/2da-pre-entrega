@@ -5,12 +5,7 @@
     
 }
 
-body{
-    background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 70%, rgba(0,74,255,1) 100%);
-    background-attachment: local;
-    background-size: 100% 100%;
-}
+
 
 h1{
     color: rgb(39, 119, 173);
@@ -28,14 +23,10 @@ h3{
 }
 
 .texto-claro{
-    color: rgb(252, 219, 178);
+    color: rgb(134, 134, 134);
     font-size: 1.2em;
 }
 
-.bg-blue{
-    background: rgb(26, 26, 102);
-    background: radial-gradient(circle, rgba(9,9,121,0.9051995798319328) 5%, rgba(0,74,255,0.0760679271708683) 100%);
-}
 
 .bg-gray{
     background-color: rgb(226, 223, 223);
@@ -44,6 +35,12 @@ h3{
 
 
 /* botonera */
+
+
+.botonera__bg{
+    background-color: rgba(190, 198, 202, 0.767);
+    height: 80px;
+}
 
 #botonera ul li a{
     color: rgb(1, 1, 10);
@@ -121,7 +118,7 @@ nav a:hover{
     -webkit-transform:scale(1.3);transform:scale(1.3);
 }
 
-     /* header */
+     /* header index */
 @keyframes headerAnimate{
     0%{background-image: url(../img/fotos/entrandoalringgrande.jpg);}
     25%{background-image: url(../img/fotos/header-entrenamientos.JPG)}
@@ -142,11 +139,29 @@ nav a:hover{
 {
     .encabezado{
         width: 100%;
-        height: 140vh;
+        height: 100vh;
     }
     
 }
 
+/* header biografia */
+.header__biografia{
+    background-image: url(../img/fotos/esquiva.JPG);
+    width: 110%;
+    height: 40vh;
+    background-size: cover;
+    opacity: 1;
+}
+
+@media (min-width:1024px) {
+    .header__biografia{
+        background-image: url(../img/fotos/esquiva.JPG);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    opacity: 1;
+    }
+}
 
 /* formulario */
 .block{
@@ -208,3 +223,4 @@ nav a:hover{
     cursor: pointer;
     transition: 1.6s; 
 }
+
