@@ -29,7 +29,7 @@ h3{
 
 
 .bg-gray{
-    background-color: rgb(226, 223, 223);
+    background-color: rgba(226, 223, 223, 0.562);
 }
 
 
@@ -150,18 +150,92 @@ nav a:hover{
     width: 110%;
     height: 40vh;
     background-size: cover;
-    opacity: 1;
+    opacity: .9;
 }
 
 @media (min-width:1024px) {
     .header__biografia{
         background-image: url(../img/fotos/esquiva.JPG);
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     background-size: cover;
-    opacity: 1;
+    opacity: .9;
+   background-position: center;
+
     }
 }
+
+/* header entrenamientos */
+
+.header__entrenamientos{
+    background-image: url(../img/fotos/patada-2.jpg);
+    width: 110%;
+    height: 40vh;
+    background-size: cover;
+    opacity: .9;
+}
+
+@media (min-width:1024px) {
+    .header__entrenamientos{
+        background-image: url(../img/fotos/patada-2.jpg);
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    opacity: .9;
+   
+  
+
+    }
+}
+
+
+/*  header indumentaria*/
+
+.header__indumentaria{
+    background-image: url(../img/fotos/frontal.jpg);
+    width: 110%;
+    height: 40vh;
+    background-size: cover;
+    opacity: .9;
+}
+
+@media (min-width:1024px) {
+    .header__indumentaria{
+        background-image: url(../img/fotos/frontal.jpg);
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    opacity: .9;
+   background-position: center;
+  
+
+    }
+}
+
+/* header contacto */
+
+.header__contacto{
+    background-image: url(../img/fotos/entrandoalringgrande.jpg);
+    width: 110%;
+    height: 40vh;
+    background-size: cover;
+    opacity: .9;
+}
+
+@media (min-width:1024px) {
+    .header__contacto{
+        background-image: url(../img/fotos/entrandoalringgrande.jpg);
+    width: 100%;
+    height: 80vh;
+    background-size: cover;
+    opacity: .9;
+   
+
+  
+
+    }
+}
+
 
 /* formulario */
 .block{
