@@ -19,7 +19,7 @@
 <link rel="stylesheet" href="../css/animate.css">
 
 
-
+<div id="contenedor-grid">
  <!-- comienza botonera I -->
  <nav class="navbar botoneraI py-0 bg-gray">
   <div class="container">
@@ -32,7 +32,7 @@
 <!-- termina botonera I -->
 
 <!-- comienza botonera II -->
-<div class="sticky-top">
+<div class="sticky-top botoneraII">
   <nav class="navbar navbar-expand-lg botonera__bg" id="botonera">
     <div class="container-fluid">
       <a class="navbar-brand mx-4" href="../index.html">
@@ -80,21 +80,24 @@
 
 
 
-<!-- termina botonera -->
+<!-- termina botonera II -->
 <!-- comienza header -->
 <header class="header__contacto">
 
 </header>
 <!-- termina header -->
-<main>
-  <h1 class="text__center">Contacto</h1>
-      <main>
-   <section class="block text__left">
+
+  <h1 class="text__center my-3 titulo">Contacto</h1>
+  
+   <div class="text__left blockI">
       <h2>Celular</h2>
       <p class="main__texto--m">3512818316</p>
+   </div>
 
+
+   <div class="blockII text__left">
       <h2>Formulario</h2>
-      <form class="form-register">
+      <form class="form-register text__left mx-0">
   <form action="envio.php" method="post">
       <label for="nombre">Nombre</label>
       <input type="text" name="nombre" id="nombre" placeholder= "Ingrese su nombre"><br>
@@ -108,17 +111,17 @@
       <input type="reset" value="Cancelar">
 
   </form>
+</div>
 
-</section>
 <!-- termina formulario -->
 <!-- maps -->
-<section class="inline">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.8597356017326!2d-64.15351978572242!3d-31.390430881412733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432981c30e2399b%3A0xf4afa9a7ea685f5e!2sGimnasio%20Sin%20L%C3%ADmites!5e0!3m2!1ses-419!2sar!4v1670370311606!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+<section>
+  <iframe class="mapa ms-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.8597356017326!2d-64.15351978572242!3d-31.390430881412733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432981c30e2399b%3A0xf4afa9a7ea685f5e!2sGimnasio%20Sin%20L%C3%ADmites!5e0!3m2!1ses-419!2sar!4v1670370311606!5m2!1ses-419!2sar" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
   </iframe>
     
   </section>
 <!-- /maps -->
-</main>
+
 
 
 
@@ -126,7 +129,7 @@
 
 
 <!-- comienza footer -->
-<footer>
+<footer class="footer">
 
   <nav class="mx-3 flex justify-content botonera__lista aligne-items">
 
@@ -151,6 +154,9 @@
     </a>
 </nav>
 </footer>
+
+
+</div>
 <!-- termina footer -->
     <script src="../js/wow.min.js"></script>
   <script>
