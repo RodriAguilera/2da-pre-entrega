@@ -308,6 +308,6 @@ nav a:hover{
 .boton:hover{
     background: linear-gradient(to right, rgb(134, 7, 134),rgb(236, 157, 236));
     cursor: pointer;
-    transition: 1.6s; 
+    transition: 0.9s; 
 }
 
