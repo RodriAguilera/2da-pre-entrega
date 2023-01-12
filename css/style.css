@@ -29,15 +29,20 @@ h3{
 
 
 .bg-gray{
-    background-color: rgba(226, 223, 223, 0.562);
+    background-color:  rgba(190, 198, 202, 0.521);
 }
 
 /* Botonera I */
 
 .botoneraI{
-    height: 34px;
+    height: 36px;
 
 }
+.botoneraI-img:hover{
+    filter: invert(100%);
+    cursor: pointer;
+    transition: 0.5s;
+  }
 
 /* botonera II */
 
@@ -53,18 +58,21 @@ h3{
 }
 
 #botonera ul li a:hover{
-    color: antiquewhite;
+    color: rgb(248, 245, 245);
+    transition: 0.5s;
 }
 
 /* Imágenes */
 
-.carrusel{
-    height: 1080px;
-}
-
 .nav-img{
     width: 85px;
 }
+
+.nav-img:hover{
+    filter: invert(100%);
+    cursor: pointer;
+    transition: 0.5s;
+  }
 .img-center{
     margin-left: auto;
   margin-right: auto;
