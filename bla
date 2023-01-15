@@ -1,0 +1,304 @@
+
+
+/*# sourceMappingURL=style.css.map */
+
+/* textos */
+
+
+
+.texto-claro{
+    color: rgb(134, 134, 134);
+    font-size: 1em;
+}
+
+.text__center{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.text__left{
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.main__texto--m{
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: rgb(199, 188, 183);
+}
+
+/* Imágenes */
+
+.nav-img{
+    width: 85px;
+}
+
+.nav-img:hover{
+    filter: invert(100%);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+.img-center{
+    margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+
+.card-img{
+    width: 100px;
+    padding: 5%;
+}
+
+
+
+/* footer */
+.flex{
+    display: flex;
+}
+
+.justify-content{
+    justify-content: space-between;
+   }
+
+.aligne-items{
+    align-items: center;
+}
+
+.botonera__lista{
+
+    text-decoration: none;
+    list-style: none;
+    padding-top: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 1em;
+
+}
+
+nav a{
+    color:rgb(0, 0, 0);
+}
+
+nav a:hover{
+    color: antiquewhite;}
+
+/*==== Dinamismo===== */
+     /* cards */
+         /* kick boxeo funcional */
+.card__container{
+    width: 415px;
+    overflow: hidden;
+}
+
+
+@media (min-width:1024px){
+    .cards:hover img{
+        transition: all 1s;
+        filter: grayscale(80%);
+        -webkit-transform:scale(1.3);transform:scale(1.3);
+    }
+}
+
+
+     /* header index */
+@keyframes headerAnimate{
+    0%{background-image: url(../img/fotos/animacion1.webp);}
+    25%{background-image: url(../img/fotos/animacion2.webp)}
+    50%{background-image: url(../img/fotos/animacion3.webp);}
+    75%{background-image: url(../img/fotos/animacion4.webp);}
+    100%{background-image: url(../img/fotos/animacion5.webp);}
+}
+.encabezado{
+    width: 110%;
+    height: 40vh;
+    background-size: cover;
+    animation-name: headerAnimate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@media (min-width:1024px) 
+{
+    .encabezado{
+        width: 100%;
+        height: 100vh;
+    }
+    
+}
+
+/* header biografia */
+.header__biografia{
+    background-image: url(../img/fotos/headerBiografia.webp);
+    width: 110%;
+    height: 40vh;
+    background-size: cover;
+    opacity: .9;
+}
+
+@media (min-width:1024px) {
+    .header__biografia{
+    width: 100%;
+    height: 80vh;
+   
+
+    }
+}
+
+/* header entrenamientos */
+
+.header__entrenamientos{
+    background-image: url(../img/fotos/headerEntrenamientos.webp);
+    width: 110%;
+    height: 40vh;
+    background-size: cover;
+    opacity: .9;
+}
+
+@media (min-width:1024px) {
+    .header__entrenamientos{
+    width: 100%;
+    height: 80vh;
+    }
+}
+
+
+/*  header indumentaria*/
+
+.header__indumentaria{
+    background-image: url(../img/fotos/frontal.jpg);
+    width: 110%;
+    height: 40vh;
+    background-size: cover;
+    opacity: .9;
+}
+
+@media (min-width:1024px) {
+    .header__indumentaria{
+    width: 100%;
+    height: 80vh;
+   background-position: center;
+    }
+}
+
+/* header contacto */
+
+.header__contacto{
+    background-image: url(../img/fotos/entrandoalringgrande.jpg);
+    width: 110%;
+    height: 40vh;
+    background-size: cover;
+    opacity: .9;
+}
+
+@media (min-width:1024px) {
+    .header__contacto{
+    width: 100%;
+    height: 80vh;
+     }
+}
+
+
+/* formulario */
+
+.form-register{
+    width: 300px;
+    background: linear-gradient(to right, rgb(236, 157, 236), rgb(134, 7, 134));
+    padding: 20px;
+    margin: auto;
+    font-size: 1em;
+
+}
+
+/* boton contacto */
+.boton{
+    width: 100px;
+    height: 30px;
+    border: none;
+    padding: 0.5%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(236, 157, 236), rgb(134, 7, 134));
+    border-radius: 4px;
+
+}
+
+.boton:hover{
+    background: linear-gradient(to right, rgb(134, 7, 134),rgb(236, 157, 236));
+    cursor: pointer;
+    transition: 0.9s; 
+}
+
+/* GRIDS contacto */
+
+#contenedor-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(8, auto);
+    grid-template-areas: 
+    "botoneraI"
+    "botoneraII"
+    "header__contacto"
+    "titulo"
+    "blockI"
+    "blockII"
+    "mapa"
+    "footer"
+    ;
+	
+}
+
+@media (min-width:1024px){
+    #contenedor-grid{
+        grid-template-columns: repeat(2,50%);
+        grid-template-rows: repeat(7, auto);
+        grid-template-areas:
+        "botoneraI botoneraI"
+        "botoneraII botoneraII"
+        "header__contacto header__contacto"
+        "titulo titulo"
+        "blockI blockI"
+        "blockII mapa"
+        "footer footer"
+         ;
+    }
+}
+    /* grid areas contacto */
+
+.botoneraI{
+    grid-area: botoneraI;
+}
+
+.botoneraII{
+    grid-area: botoneraII;
+}
+
+.header__contacto{
+    grid-area: header__contacto;
+    width: 100%;
+}
+
+.titulo{
+    grid-area: titulo;
+}
+
+.blockI{
+    grid-area: blockI;
+}
+
+.blockII{
+    grid-area: blockII;
+}
+
+.mapa{
+    grid-area: mapa;
+}
+
+.footer{
+    grid-area: footer;
+}

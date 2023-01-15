@@ -1,0 +1,29 @@
+//background
+
+.bg-gray{
+    background-color: $secondaryColor;
+}
+
+//textos
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    color: rgb(39, 119, 173);
+    font-size: 1.5em;
+   
+}
+
+h2{
+    color: rgb(158, 34, 142);
+    font-size: 1.2em;
+}
+
+
+h3{
+    font-size: 1em;
+}

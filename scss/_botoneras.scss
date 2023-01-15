@@ -1,0 +1,42 @@
+
+//botoneraI
+
+.botoneraI{
+    height: 36px;
+        img:hover{
+        filter: invert(100%);
+        cursor: pointer;
+        transition: 0.5s;
+      }
+
+}
+
+//botoneraII
+
+
+.botonera__bg{
+    background-color: $mainBg;
+    height: 80px;
+    
+    #botonera ul li a{
+    color: rgb(49, 49, 56);
+    font-size: 1.2em;
+}
+
+    #botonera ul li a:hover{
+    color: rgb(248, 245, 245);
+    transition: 0.5s;
+}
+
+
+}
+
+.nav-img{
+    width: 85px;
+
+    .nav-img:hover{
+        filter: invert(100%);
+        cursor: pointer;
+        transition: 0.5s;
+      }
+}
