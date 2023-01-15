@@ -15,28 +15,79 @@
 
 
 .botonera__bg{
-    background-color: $mainBg;
+    background-color: $mainColor;
     height: 80px;
-    
-    #botonera ul li a{
-    color: rgb(49, 49, 56);
-    font-size: 1.2em;
 }
 
-    #botonera ul li a:hover{
-    color: rgb(248, 245, 245);
+#botonera a{
+    color: $blackColor;
+    font-size: 1.2em;   
+        &:hover{
+    color: $lightColor;
     transition: 0.5s;
 }
-
-
 }
+
 
 .nav-img{
     width: 85px;
 
-    .nav-img:hover{
+    &:hover{
         filter: invert(100%);
         cursor: pointer;
         transition: 0.5s;
       }
 }
+
+
+
+/* footer */
+.flex{
+    display: flex;
+}
+
+.justify-content{
+    justify-content: space-between;
+   }
+
+.aligne-items{
+    align-items: center;
+}
+
+.botonera__lista{
+
+    text-decoration: none;
+    list-style: none;
+    padding-top: 20px;
+    color: $blackColor;
+    font-size: $fontM;
+
+    a{
+        color:$blackColor;
+        &:hover{
+            color: $lightColor;
+        }
+    }
+
+}
+
+
+    /* boton contacto */
+.boton{
+    width: 100px;
+    height: 30px;
+    border: none;
+    padding: 0.5%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(236, 157, 236), rgb(134, 7, 134));
+    border-radius: 4px;
+    &:hover{
+        background: linear-gradient(to right, rgb(134, 7, 134),rgb(236, 157, 236));
+        cursor: pointer;
+        transition: 0.9s; 
+    }
+
+}
+

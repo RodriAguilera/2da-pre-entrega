@@ -1,12 +1,14 @@
 //background
 
+
+
 .bg-gray{
-    background-color: $secondaryColor;
+    background-color:$secondaryColor;
 }
+
 
 //textos
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
 
 *{
     font-family: 'Poppins', sans-serif;
@@ -14,16 +16,16 @@
 
 h1{
     color: rgb(39, 119, 173);
-    font-size: 1.5em;
+    font-size: $fontXl;
    
 }
 
 h2{
     color: rgb(158, 34, 142);
-    font-size: 1.2em;
+    font-size: $fontL;
 }
 
 
 h3{
-    font-size: 1em;
+    font-size: $fontM;
 }
