@@ -28,9 +28,26 @@ h3{
     font-size: $fontM;
 }
 
+//h4 imgFondo fijo
+h4{
+    font-size: $fontXl;
+    color: rgb(255, 255, 255);
+    font-family: 'IM Fell Great Primer', serif;
+    -webkit-text-stroke: 0.2px rgb(0, 0, 0);
+
+}
+
+@media (min-width:992px){
+    h4{
+        font-size: 9em;
+    }
+}
+
+//termina h4
 .texto-claro{
     color: rgb(134, 134, 134);
     font-size: $fontM;
+    
 }
 
 .text__center{
@@ -48,3 +65,24 @@ h3{
     color: $lightColor;
 }
 
+.p-center{
+    padding: 10px 20px 10px 20px;
+}
+
+//texto imgFondo fijo
+.textoXl{
+   @extend h4;
+   font-size: $fontM;
+   text-align: center;
+   padding-right: 80px;
+   font-family: 'Raleway', sans-serif;
+   -webkit-transform: rotate(-0deg); 
+}
+
+@media (min-width:992px){
+
+    .textoXl{
+
+        padding-right: 500px;
+    }    
+}

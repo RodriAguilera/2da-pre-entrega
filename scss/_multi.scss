@@ -32,6 +32,35 @@
             }
         }
         
+
+
+
+// imgFondo fijo
+
+.imgFondo{
+    background-image: url(../img/fotos/imgFondo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: $headerHeight;
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+    filter: grayscale(0.8);
+    overflow: scroll;   
+  
+}
+
+@media (min-width:992px){
+    .imgFondo{
+        background-image: url(../img/fotos/imgFondo.webp);
+        background-attachment: fixed;
+        height: $headerHeight;
+        overflow:hidden;
+
+    }
+}
+
+
 //formulario
 
 .form-register{
@@ -39,7 +68,7 @@
     background: linear-gradient(to right, rgb(236, 157, 236), rgb(134, 7, 134));
     padding: 20px;
     margin: auto;
-    font-size: $fontM;
+    font-size: 1em;
 
 }
 
